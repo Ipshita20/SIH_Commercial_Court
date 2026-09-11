@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NyayaLens | Commercial Court Intelligence</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">N</div>
+        <div>
+          <div class="brand-name">NyayaLens</div>
+          <div class="brand-sub">Commercial Court Intelligence</div>
+        </div>
+      </div>
+
+      <div class="sidebar-label">WORKSPACE</div>
+      <button class="nav-item active" data-view="research"><span>⌕</span> Legal Research</button>
+      <button class="nav-item" data-view="documents"><span>▤</span> Document Intelligence</button>
+
+      <div class="sidebar-label">CAPABILITIES</div>
+      <div class="side-note"><span class="dot green"></span> Local & explainable retrieval</div>
+      <div class="side-note"><span class="dot blue"></span> Commercial Courts corpus</div>
+      <div class="side-note"><span class="dot gold"></span> Source-grounded output</div>
+
+      <div class="sidebar-bottom">
+        <div class="privacy-card">
+          <div class="privacy-icon">◉</div>
+          <div>
+            <strong>Runs locally</strong>
+            <p>No Gemini, Claude, or API key required.</p>
+          </div>
+        </div>
+        <div class="sidebar-foot">SIH PoC / MVP • NyayaLens</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">AI-ASSISTED LEGAL RESEARCH</div>
+          <h1>Commercial Court Intelligence</h1>
+          <p>Search statutes and case material, inspect evidence, and analyze legal documents.</p>
+        </div>
+        <div class="status-pill"><span class="dot green"></span> System ready</div>
+      </header>
+
+      <section class="hero-strip">
+        <div class="hero-copy">
+          <div class="hero-badge">⚖️ BUILT FOR COMMERCIAL COURTS</div>
+          <h2>Find the law behind the question.</h2>
+          <p>NyayaLens combines explainable TF-IDF retrieval with a curated legal knowledge base to surface relevant provisions and supporting material without sending your data to an external AI API.</p>
+          <div class="hero-actions">
+            <button class="hero-btn" id="heroResearch">Start research <span>→</span></button>
+            <button class="ghost-btn" id="heroDemo">Try a demo query</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="court-seal">⚖</div>
+          <div class="visual-caption">GROUNDed<br/>LEGAL EVIDENCE</div>
+        </div>
+      </section>
+
+      <section class="metrics">
+        <div class="metric"><span class="metric-icon">▦</span><div><strong>{{ corpus_size }}</strong><small>Knowledge documents</small></div></div>
+        <div class="metric"><span class="metric-icon">⌕</span><div><strong>TF-IDF</strong><small>Explainable retrieval</small></div></div>
+        <div class="metric"><span class="metric-icon">▤</span><div><strong>PDF</strong><small>Document analysis</small></div></div>
+        <div class="metric"><span class="metric-icon">◉</span><div><strong>LOCAL</strong><small>No API key required</small></div></div>
+      </section>
+
+      <section class="view" id="researchView">
+        <div class="section-head">
+          <div><div class="eyebrow">RESEARCH WORKBENCH</div><h2>Legal Query</h2></div>
+          <div class="source-chip">Source-grounded</div>
+        </div>
+
+        <div class="search-card" id="searchCard">
+          <div class="search-label">What would you like to research?</div>
+          <div class="search-row">
+            <textarea id="query" rows="2" placeholder="e.g. Is pre-institution mediation mandatory before filing a commercial suit?"></textarea>
+            <button id="searchBtn" class="primary-btn"><span>⌕</span> Search</button>
+          </div>
+          <div class="suggestions">
+            <button data-query="Is pre-institution mediation mandatory before filing a commercial suit?">Section 12A mediation</button>
+            <button data-query="What is the time limit for filing a written statement in a commercial suit?">Written statement timeline</button>
+            <button data-query="What is the specified value threshold for a commercial dispute?">Specified Value</button>
+          </div>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+          <div class="empty-icon">⌕</div>
+          <h3>Search the legal knowledge base</h3>
+          <p>Enter a legal question to retrieve the most relevant provisions and case material with transparent relevance scores.</p>
+        </div>
+
+        <div class="results-layout hidden" id="researchResults">
+          <div class="answer-column">
+            <div class="panel-title"><span class="title-icon">✦</span> Research Finding</div>
+            <div class="answer-card" id="answerCard"></div>
+          </div>
+          <div class="evidence-column">
+            <div class="panel-title"><span class="title-icon">◈</span> Supporting Evidence</div>
+            <div id="evidenceList"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view hidden" id="documentsView">
+        <div class="section-head">
+          <div><div class="eyebrow">DOCUMENT WORKBENCH</div><h2>Document Intelligence</h2></div>
+          <div class="source-chip">Offline analysis</div>
+        </div>
+
+        <div class="upload-card" id="dropZone">
+          <div class="upload-icon">▤</div>
+          <h3>Analyze a legal PDF</h3>
+          <p>Extract text, identify likely parties/facts/issues, and retrieve related legal provisions.</p>
+          <label class="upload-btn">Choose PDF<input type="file" id="pdfInput" accept="application/pdf" hidden /></label>
+          <div class="upload-name" id="uploadName">No document selected</div>
+        </div>
+
+        <div class="document-result hidden" id="documentResult">
+          <div class="document-grid">
+            <div class="doc-main">
+              <div class="panel-title"><span class="title-icon">✦</span> Extracted Research Summary</div>
+              <div class="doc-section"><span>PARTIES & CASE TYPE</span><p id="docParties"></p></div>
+              <div class="doc-section"><span>KEY FACTS</span><p id="docFacts"></p></div>
+              <div class="doc-section"><span>LEGAL ISSUES RAISED</span><p id="docIssues"></p></div>
+            </div>
+            <div class="doc-side">
+              <div class="panel-title"><span class="title-icon">◈</span> Related Sources</div>
+              <div id="docSources"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div><strong>NyayaLens</strong> • AI-assisted legal research prototype</div>
+        <div>⚠ Verify retrieved material independently before relying on it. This tool is not legal advice.</div>
+      </footer>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

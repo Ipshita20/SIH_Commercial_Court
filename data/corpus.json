@@ -1,0 +1,92 @@
+[
+  {
+    "id": "CCA-S2",
+    "title": "Commercial Courts Act, 2015 — Section 2: Definitions",
+    "source": "Commercial Courts Act, 2015",
+    "text": "Section 2(1)(c) defines a 'Commercial Dispute' to include disputes arising out of ordinary transactions of merchants, bankers, financiers and traders such as those relating to mercantile documents, export or import of merchandise, admiralty and maritime law, transactions relating to aircraft/aircraft engines, carriage of goods, franchising, distribution and licensing agreements, management and consultancy agreements, joint venture agreements, shareholders agreements, subscription and investment agreements, mergers and acquisitions, contracts for sale of goods or services, exploitation of oil and gas reserves, and intellectual property rights disputes."
+  },
+  {
+    "id": "CCA-S3",
+    "title": "Commercial Courts Act, 2015 — Section 3: Constitution of Commercial Courts",
+    "source": "Commercial Courts Act, 2015",
+    "text": "Section 3 empowers the State Government, after consultation with the concerned High Court, to constitute Commercial Courts at the district level. In territories where the High Court has ordinary original civil jurisdiction, Commercial Divisions are constituted within the High Court itself instead."
+  },
+  {
+    "id": "CCA-S4",
+    "title": "Commercial Courts Act, 2015 — Section 4: Constitution of Commercial Appellate Courts",
+    "source": "Commercial Courts Act, 2015",
+    "text": "Section 4 provides for the constitution of Commercial Appellate Courts at the district judiciary level to hear appeals against orders of Commercial Courts below the level of a District Judge."
+  },
+  {
+    "id": "CCA-S12A",
+    "title": "Commercial Courts Act, 2015 — Section 12A: Pre-Institution Mediation and Settlement",
+    "source": "Commercial Courts Act, 2015",
+    "text": "Section 12A mandates that a suit which does not contemplate any urgent interim relief shall not be instituted unless the plaintiff exhausts the remedy of pre-institution mediation, in accordance with rules framed by the Central Government. This provision was introduced to encourage settlement before formal litigation and reduce caseload on Commercial Courts."
+  },
+  {
+    "id": "CCA-S13",
+    "title": "Commercial Courts Act, 2015 — Section 13: Appeals",
+    "source": "Commercial Courts Act, 2015",
+    "text": "Section 13 provides that any person aggrieved by a judgment or order of a Commercial Court below the level of a District Judge may appeal to the Commercial Appellate Court within sixty days from the date of judgment or order. Orders that are purely interlocutory in nature, not specifically enumerated, are generally not appealable to reduce delay."
+  },
+  {
+    "id": "CCA-S15",
+    "title": "Commercial Courts Act, 2015 — Section 15: Transfer of Pending Suits",
+    "source": "Commercial Courts Act, 2015",
+    "text": "Section 15 provides for the transfer of all suits and applications relating to commercial disputes of a Specified Value pending in a civil court to the Commercial Court or Commercial Division having territorial jurisdiction, to consolidate commercial litigation before specialised benches."
+  },
+  {
+    "id": "CCA-S16",
+    "title": "Commercial Courts Act, 2015 — Section 16: Amendments to the Code of Civil Procedure",
+    "source": "Commercial Courts Act, 2015",
+    "text": "Section 16 amends the Code of Civil Procedure, 1908 as applicable to commercial disputes, introducing stricter timelines for filing written statements (30 days, extendable up to 120 days with reasons), summary judgment procedures, and case management hearings to prevent delay."
+  },
+  {
+    "id": "CPC-O15A",
+    "title": "CPC Order XV-A: Case Management Hearing",
+    "source": "Code of Civil Procedure, 1908 (as amended for Commercial Disputes)",
+    "text": "Order XV-A requires the Commercial Court to hold a Case Management Hearing after the completion of pleadings, to frame issues, fix a timetable for recording evidence, and fix a date for final arguments, with the aim of completing trial within one year of the first case management hearing."
+  },
+  {
+    "id": "SPECVAL",
+    "title": "Specified Value threshold for Commercial Disputes",
+    "source": "Commercial Courts Act, 2015 — Section 2(1)(i)",
+    "text": "The 'Specified Value' with respect to a commercial dispute means the value of the subject matter, which shall not be less than three lakh rupees or such higher value as notified by the Central Government. Commercial suits below this threshold are heard by ordinary civil courts, not Commercial Courts."
+  },
+  {
+    "id": "CASE-DELAY-01",
+    "title": "Illustrative summary: Delay condonation in filing written statement",
+    "source": "Sample case digest",
+    "text": "In several Commercial Court rulings interpreting Section 16 read with Order VIII Rule 1 CPC, courts have held that the outer limit of 120 days for filing a written statement is mandatory and not merely directory for commercial suits, and courts have no discretion to extend time beyond 120 days, distinguishing the position from ordinary civil suits."
+  },
+  {
+    "id": "CASE-MEDIATION-01",
+    "title": "Illustrative summary: Pre-institution mediation as mandatory pre-condition",
+    "source": "Sample case digest",
+    "text": "Courts have held that pre-institution mediation under Section 12A is mandatory in nature for suits not seeking urgent interim relief, and a suit instituted in violation of this requirement is liable to be rejected under Order VII Rule 11 CPC, though the plaintiff may refile after completing mediation."
+  },
+  {
+    "id": "CASE-IP-01",
+    "title": "Illustrative summary: IPR disputes falling within 'commercial dispute'",
+    "source": "Sample case digest",
+    "text": "Disputes relating to trademarks, copyright, patents and other intellectual property rights are treated as commercial disputes under Section 2(1)(c)(xvii) of the Act where the value of the subject matter meets the Specified Value threshold, bringing such matters within the jurisdiction of Commercial Courts or Commercial Divisions rather than ordinary IP jurisdiction."
+  },
+  {
+    "id": "CASE-URGENT-01",
+    "title": "Illustrative summary: Meaning of 'urgent interim relief' exception to Section 12A",
+    "source": "Sample case digest",
+    "text": "Courts assessing whether a suit contemplates 'urgent interim relief' for the purposes of exempting a plaintiff from pre-institution mediation under Section 12A have held that the urgency must be real and the plaint must disclose a contemplation of interim relief on the date of institution; the exception cannot be used as a device to bypass mandatory mediation."
+  },
+  {
+    "id": "CASE-SUMMARY-01",
+    "title": "Illustrative summary: Summary judgment procedure",
+    "source": "Sample case digest",
+    "text": "Order XIII-A CPC (applicable to commercial disputes) allows a court to decide a claim without recording oral evidence where it considers the applicant has no real prospect of succeeding or the respondent has no real prospect of successfully defending, enabling faster disposal of commercial suits without full trial."
+  },
+  {
+    "id": "CASE-JOINT-VENTURE-01",
+    "title": "Illustrative summary: Joint venture agreement disputes",
+    "source": "Sample case digest",
+    "text": "Disputes arising from breach of joint venture agreements, including disagreements over profit-sharing, management control and exit clauses, fall squarely within the definition of commercial dispute under Section 2(1)(c)(vii) and are commonly litigated in Commercial Courts and Commercial Divisions of High Courts."
+  }
+]
