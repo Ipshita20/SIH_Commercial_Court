@@ -1,0 +1,16 @@
+NYAYALENS - VERCEL READY
+
+LOCAL:
+1. Open terminal in this folder.
+2. python -m pip install -r requirements.txt
+3. python app.py
+4. Open http://127.0.0.1:5000
+
+VERCEL:
+1. Upload this project to GitHub.
+2. Go to https://vercel.com/new
+3. Import the GitHub repository.
+4. Deploy. Vercel detects the Flask app in app.py.
+5. Share the generated vercel.app URL.
+
+No Gemini/Claude/API key is required.
